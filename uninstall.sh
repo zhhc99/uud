@@ -6,6 +6,7 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
+echo "[uud] Stopping service, this may take a moment..."
 systemctl disable --now uuplugin-linux || true
 rm -f /etc/systemd/system/uuplugin-linux.service
 systemctl daemon-reload
