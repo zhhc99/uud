@@ -16,6 +16,8 @@
 curl -sSL https://raw.githubusercontent.com/zhhc99/uud/main/install.sh | sudo bash
 ```
 
+安装之后, 和官方脚本一样: 用 UU 主机加速器 APP 绑定 SteamDeck. 只在每次重启时需要重新绑定一次.
+
 **卸载:**
 
 ```bash
