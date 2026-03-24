@@ -8,7 +8,7 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-echo "[uud] Stopping service, this may take a moment..."
+echo "[uud] Stopping service. DO NOT interrupt because this may take a moment..."
 systemctl disable --now "$SERVICE_NAME" || true
 rm -f /etc/systemd/system/${SERVICE_NAME}.service
 systemctl daemon-reload
