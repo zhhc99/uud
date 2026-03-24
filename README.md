@@ -38,5 +38,6 @@ curl -sSL https://raw.githubusercontent.com/zhhc99/uud/main/uninstall.sh | sudo 
 - systemd
 - curl
 - bash
+- jq, md5sum
 
-如果你的 Linux 没有这些, 你肯定可以自己解决问题.
+如果你的 Linux 发行版没有这些, 你肯定可以自己解决问题.

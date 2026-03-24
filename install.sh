@@ -2,7 +2,7 @@
 set -e
 
 INSTALL_DIR="/opt/uu"
-SERVICE_NAME="uuplugin-linux"
+SERVICE_NAME="uud"
 SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
 API="https://router.uu.163.com/api/plugin?type=steam-deck-plugin-x86_64"
 
@@ -72,7 +72,7 @@ echo "[uud] Registering systemd service $SERVICE_NAME..."
 # --- systemd service ---
 cat > "$SERVICE_FILE" << EOF
 [Unit]
-Description=UU Accelerator
+Description=UU Plugin Daemon (unofficial)
 Wants=network-online.target
 After=network.target network-online.target
 
